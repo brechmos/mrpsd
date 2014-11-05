@@ -1,5 +1,5 @@
 %
-% phase(channel, start, width, amp)
+% grad_phase(channel, start, width, amp)
 %
 % channel = gradient channel ('x', 'y', or 'z')
 % start = starting time of gradient (in ms)
@@ -8,9 +8,9 @@
 %
 
 %
-%  $Id: phase.m,v 1.3 2000/03/06 14:39:11 craig Exp $
+%  $Id: grad_phase.m,v 1.3 2000/03/06 14:39:11 craig Exp $
 %
-function [h] = phase(channel, start, width, amp)
+function [h] = grad_phase(channel, start, width, amp)
 
 scaled_amp = 0.5 * amp;
 

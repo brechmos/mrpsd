@@ -12,8 +12,8 @@
 %   grad_rewind - Create a gradient and rewinder.
 %   grad_crushed- Create a crushed gradient.
 %
-%   phase       - Create a phase encode.
-%   mphase      - Create a multi-phase encode.
+%   grad_phase  - Create a phase encode.
+%   mphase      - Create a multi-grad_phase encode.
 %
 %   rf_sinc     - Create a sinc pulse.
 %   rf_hard     - Create a hard pulse.

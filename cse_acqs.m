@@ -82,7 +82,7 @@ end
 %
 %  Phase Killer.
 %
-phase('y', t+esp+8, 4, 1.0);
+grad_phase('y', t+esp+8, 4, 1.0);
 
 h=text(190, 0.5, '...'); 
 set(h, 'fontsize', 24);
