@@ -8,6 +8,11 @@
 %  $Id: cpmg.m,v 1.3 2000/03/06 14:39:11 craig Exp $
 %
 
+% build asinc.dat file
+%asinc = sinc(linspace(-2,1,100));
+%fp = fopen('asinc.dat','w+');
+%fwrite(fp,asinc,'float');
+%fclose(fp);
 
 [a] = psd_setup({'RF', 'G_x', 'G_y', 'G_z'});
 
@@ -79,7 +84,7 @@ end
 %
 %  Phase Killer.
 %
-phase(gy, t+esp+8, 4, 1.0);
+grad_phase(gy, t+esp+8, 4, 1.0);
 
 h=text(190, 2.5, '...'); 
 set(h, 'fontsize', 24);

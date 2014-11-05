@@ -48,7 +48,7 @@ for echo=1:4
 	%
 	%  Phase encode.
 	%
-	phase(gy, t+esp-2, 2, phase_amp(echo));
+	grad_phase(gy, t+esp-2, 2, phase_amp(echo));
 
 	%--------------------------------------------------
 	%
@@ -60,7 +60,7 @@ for echo=1:4
 	%
 	%  Phase rewind.
 	%
-	phase(gy, t+esp+8, 2, -phase_amp(echo));
+	grad_phase(gy, t+esp+8, 2, -phase_amp(echo));
 
 	t = t + 2*esp;
 

@@ -20,7 +20,7 @@ gz = a(4);
 pause;
 
 clc
-disp('Setup the phase amplitudes...');
+disp('Setup the grad_phase amplitudes...');
 
 phase_amp=[-0.8 -0.4 0.4 0.8]
 pause;
@@ -90,9 +90,9 @@ for echo=1:4
 	%  Phase encode.
 	%
 	clc
-	disp('Add the stepped phase encode...');
+	disp('Add the stepped grad_phase encode...');
 
-	phase(gy, t+esp-2, 2, phase_amp(echo));
+	grad_phase(gy, t+esp-2, 2, phase_amp(echo));
 
 	pause
 
@@ -114,7 +114,7 @@ for echo=1:4
 	clc
 	disp('Add the rewinder...');
 
-	phase(gy, t+esp+8, 2, -phase_amp(echo));
+	grad_phase(gy, t+esp+8, 2, -phase_amp(echo));
 
 	pause
 
