@@ -17,10 +17,12 @@ end
 
 global num_axes;
 
-lt = line([ start start-width], [0.05 0.05]); set(lt, 'LineStyle', ':');
-ll = line([ start start], [0.05 num_axes+1]); set(ll, 'LineStyle', ':');
-lb = line([ start start-width], [num_axes+1 num_axes+1 ]); set(lb, 'LineStyle', ':');
+margin = 0.05;
+
+lt = line([ start start-width], [num_axes+1-margin num_axes+1-margin ], 'LineStyle', ':');
+ll = line([ start start], [margin num_axes+1-margin], 'LineStyle', ':');
+lb = line([ start start-width], [margin margin], 'LineStyle', ':');
 
 if nargin == 3
-	text(start, 0.05, t);
+	text(start+width/6, margin, t);
 end

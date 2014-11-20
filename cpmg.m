@@ -9,8 +9,8 @@
 %
 
 % build asinc.dat file
-%asinc = sinc(linspace(-2,1,100));
-%fp = fopen('asinc.dat','w+');
+%asinc = sinc(linspace(-4,2,100));
+%fp = fopen('asinc.dat','w+','b');
 %fwrite(fp,asinc,'float');
 %fclose(fp);
 

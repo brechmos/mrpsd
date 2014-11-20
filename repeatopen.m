@@ -16,7 +16,7 @@ if nargin == 1
 end
 
 global num_axes;
-
-lt = line([ start start+width], [0.05 0.05], 'LineStyle', ':');
-ll = line([ start start], [0.05 num_axes+1], 'LineStyle', ':');
-lb = line([ start start+width], [num_axes+1 num_axes+1], 'LineStyle', ':');
+margin = 0.05;
+lt = line([ start start+width], [num_axes+1-margin num_axes+1-margin], 'LineStyle', ':');
+ll = line([ start start], [margin num_axes+1-margin], 'LineStyle', ':');
+lb = line([ start start+width], [margin margin], 'LineStyle', ':');
