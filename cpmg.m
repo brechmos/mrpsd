@@ -15,6 +15,10 @@
 %fclose(fp);
 
 [a] = psd_setup({'RF', 'G_x', 'G_y', 'G_z'});
+rf = a(1);
+gx = a(2);
+gy = a(3);
+gz = a(4);
 
 esp = 20; 	% ms
 t=10;
