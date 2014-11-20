@@ -35,6 +35,7 @@ set(1, 'defaulttextfontsize', 15);
 set(1, 'defaultaxesfontsize', 15);
 %set(1, 'defaultaxescolororder', [0 0 0]);
 %set(gca, 'xcolor', [0 0 0]);
+set(1,'defaultlineLineSmoothing','on');
 
 for ii=1:num_axes
 

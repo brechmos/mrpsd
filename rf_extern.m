@@ -17,8 +17,8 @@
 %
 %  $Id: rf_extern.m,v 1.3 2000/03/06 14:39:11 craig Exp $
 %
-function [h] = rf_extern(channel, start, width, amp, ...
-						 filename, offset, N, datatype)
+function [h,rf0] = rf_extern(channel, start, width, amp, ...
+                             filename, offset, N, datatype)
 
 fp=fopen(filename, 'r', 'b');
 fseek(fp, offset, 'bof');
